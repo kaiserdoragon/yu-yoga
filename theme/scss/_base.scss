@@ -78,6 +78,7 @@ main {
     padding: 40px 0;
 
     @media (width <= 1200px) {
+      flex-direction: column;
       justify-content: center;
     }
 
@@ -160,7 +161,7 @@ main {
   ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 65px;
+    gap: 4vw;
     align-items: center;
   }
 
@@ -195,8 +196,10 @@ main {
   }
 
   @include tb-mq {
-    ul {
-      gap: 4vw;
+    .is_current {
+      &::before {
+        left: -20px;
+      }
     }
   }
 
