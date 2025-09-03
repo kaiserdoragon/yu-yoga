@@ -95,10 +95,10 @@ table {
 
     &::before {
       position: absolute;
-      bottom: -10px;
+      bottom: -30px;
       left: 50%;
       width: 30px;
-      height: 3px;
+      height: 5px;
       content: "";
       background: $color-blackgreen;
       transform: translateX(-50%);
@@ -114,6 +114,11 @@ table {
 
 .eyecatch {
   background-image: linear-gradient(to bottom, #9ba386 0%, #9ba386 50%, #ffe9ec 50%, #ffe9ec 52%, #9ba386 52%, #9ba386 100%);
+
+  &.-other {
+    background: $color-green;
+  }
+
 
   img {
     display: block;
@@ -165,5 +170,12 @@ table {
 
   &:empty {
     display: none;
+  }
+}
+
+// 404ページ
+.notfound_page {
+  .container {
+    padding: 80px min(4vw, 25px);
   }
 }

@@ -160,7 +160,15 @@
       padding: 15px 60px;
       margin: 0 0 0 auto;
       font-size: 18px;
+      cursor: pointer;
       border: 1px solid #333;
+      transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+
+      &:hover {
+        color: #fff;
+        background: $color-green;
+        border: 1px solid transparent;
+      }
     }
 
     @include max-mq {
@@ -208,7 +216,15 @@
     margin: auto;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
     border: 1px solid #fff;
+    transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+
+    &:hover {
+      color: #fff;
+      background: $color-blackgreen;
+      border: 1px solid transparent;
+    }
   }
 }
 
@@ -227,7 +243,15 @@
     padding: 15px 60px;
     margin: auto;
     font-size: var(--fz18);
+    cursor: pointer;
     border: 1px solid #333;
+    transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+
+    &:hover {
+      color: #fff;
+      background: $color-green;
+      border: 1px solid transparent;
+    }
   }
 
 
@@ -331,31 +355,74 @@
   }
 }
 
-.c-loop-slider {
-  overflow: hidden;
-}
+.top_mv {
+  position: relative;
+  background: $color-green;
 
-.c-loop-slider__wrapper {
-  display: flex;
-  width: max-content; // スライダー全体の横幅を内容に合わせて拡張
-}
-
-.c-loop-slider__items {
-  display: flex;
-  animation: infinity-scroll 30s linear infinite both;
-}
-
-.c-loop-slider__items img {
-  width: auto;
-  height: 240px;
-  margin-right: 20px; // 複製の間に余白をつける
-
-  // 画面幅によって高さ調整
-  @media screen and (min-width: 900px) {
-    height: min(340 / 900 * 100vw, 340px);
+  h2 {
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    z-index: 1;
+    font-family: $font-futura;
+    font-size: 16vw;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
   }
 
-  @media screen and (min-width: 1200px) {
-    height: max(340 / 1200 * 100vw, 340px);
+  span {
+    margin-left: -45px;
+    font-size: var(--fz40);
+  }
+
+
+
+  //.top_mv--slider
+  &--slider {
+    overflow: hidden;
+  }
+
+  //.top_mv--slider_inner
+  &--slider_inner {
+    display: flex;
+    width: max-content; // スライダー全体の横幅を内容に合わせて拡張
+  }
+
+  //.top_mv--slider_item
+  &--slider_item {
+    display: flex;
+    animation: infinity-scroll 30s linear infinite both;
+
+    img {
+      width: auto;
+      height: 440px;
+      margin-right: 20px;
+
+      @media screen and (min-width: 900px) {
+        height: min(540 / 900 * 100vw, 540px);
+      }
+
+      @media screen and (min-width: 1200px) {
+        height: max(540 / 1200 * 100vw, 540px);
+      }
+
+      @include max-mq {
+        height: 250px;
+      }
+    }
+  }
+
+  @include max-mq {
+    h2 {
+      bottom: 15px;
+      left: 8px;
+      font-size: 21vw;
+    }
+
+    span {
+      display: block;
+      margin-left: 0;
+    }
   }
 }

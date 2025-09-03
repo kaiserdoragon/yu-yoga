@@ -1,8 +1,10 @@
 <?php get_header(); ?>
-<div class="eyecatch">
-  <h1>404 NOT FOUND</h1>
-</div>
-<?php get_template_part('include/common', 'breadcrumb'); //　Breadcrumb NavXTを使わないときは削除?>
+<h1 class="page_ttl">
+  <p>404 NOT FOUND</p>
+</h1>
+
+<?php get_template_part('include/common', 'breadcrumb'); ?>
+
 <main class="notfound_page">
   <div class="container">
     <h2 class="notfound_page--ttl">お探しのページは見つかりませんでした </h2>
@@ -13,7 +15,3 @@
   </div>
 </main>
 <?php get_footer(); ?>
-
-
-
-

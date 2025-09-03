@@ -2,15 +2,15 @@
 <main>
   <div class="top_mv">
     <div class="container">
-      <div class="c-loop-slider">
-        <div class="c-loop-slider__wrapper">
-          <div class="c-loop-slider__items">
+      <h2>YU YOGA <span>on-line.</span></h2>
+      <div class="top_mv--slider">
+        <div class="top_mv--slider_inner">
+          <div class="top_mv--slider_item">
             <img src="<?php echo get_template_directory_uri(); ?>/img/top/slider03.jpg" alt="" width="166" height="864" />
             <img src="<?php echo get_template_directory_uri(); ?>/img/top/slider02.jpg" alt="" width="304" height="864" />
             <img src="<?php echo get_template_directory_uri(); ?>/img/top/slider01.jpg" alt="" width="583" height="864" />
           </div>
-          <!-- 複製 -->
-          <div class="c-loop-slider__items">
+          <div class="top_mv--slider_item">
             <img src="<?php echo get_template_directory_uri(); ?>/img/top/slider03.jpg" alt="" width="166" height="864" />
             <img src="<?php echo get_template_directory_uri(); ?>/img/top/slider02.jpg" alt="" width="304" height="864" />
             <img src="<?php echo get_template_directory_uri(); ?>/img/top/slider01.jpg" alt="" width="583" height="864" />

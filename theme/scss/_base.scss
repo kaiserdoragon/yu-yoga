@@ -65,7 +65,8 @@ main {
     }
 
     @include max-mq {
-      width: 45%;
+      align-self: flex-start;
+      width: 35%;
     }
   }
 
@@ -82,9 +83,7 @@ main {
       justify-content: center;
     }
 
-
     @include max-mq {
-      justify-content: flex-start;
       padding: 25px 0;
     }
   }
