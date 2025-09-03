@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@use "../variables" as *;
+
+// ---------------------------------------------
+//  YUについて専用
+// ---------------------------------------------
+
+.about_content {
+  padding: 100px min(4vw, 25px) 135px;
+  background: $color-green;
+
+  //.about_content--inner
+  &--inner {
+    width: min(1090px, 100%);
+    padding: 100px;
+    margin: auto;
+    background: url(../img/about/bg.jpg) no-repeat center center / cover;
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: var(--fz18);
+      text-align: center;
+    }
+
+    p {
+      width: 65%;
+      margin: 0 auto 55px;
+    }
+
+    h2,
+    p {
+      font-weight: 500;
+    }
+
+    div {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      width: fit-content;
+      padding: 40px 70px;
+      margin: auto;
+      border-right: 1px solid #333;
+      border-bottom: 1px solid #333;
+      border-left: 1px solid #333;
+    }
+
+    ul {
+      font-size: var(--fz13);
+    }
+
+    h3 {
+      position: relative;
+      top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 87%;
+      margin: 0 auto;
+
+      &::before,
+      &::after {
+        flex-grow: 1;
+        height: 1px;
+        content: "";
+        background: #333;
+      }
+
+      &::before {
+        margin-right: 20px;
+      }
+
+      &::after {
+        margin-left: 20px;
+      }
+    }
+
+    @include max-mq {
+      padding: 20px;
+
+      p {
+        width: 85%;
+      }
+
+      h3 {
+        width: 100%;
+      }
+
+      div {
+        gap: 20px;
+        padding: 40px 30px;
+      }
+    }
+  }
+}

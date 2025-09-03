@@ -1,0 +1,12 @@
+.vscode/
+.idea/
+**/css/style.css
+**/css/reset.css
+**/css/style.min.css
+**/css/reset.min.css
+**/js/scripts.min.js
+.prettierrc.json
+.stylelintrc.js
+package-lock.json
+package.json
+node_modules
