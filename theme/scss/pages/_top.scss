@@ -320,28 +320,42 @@
 
 
 
+// アニメーション設定（左に流れる）
+@keyframes infinity-scroll {
+  0% {
+    transform: translateX(0);
+  }
 
-
-
-/* 見やすくするためのcss 不要のためコピーしなくてOK */
-.swiper {
-  max-width: 300px;
-  height: 300px;
-  margin-inline: auto;
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-.swiper-slide {
-  line-height: 300px;
-  text-align: center;
-  background: red;
+.c-loop-slider {
+  overflow: hidden;
 }
 
-.swiper-slide:nth-child(2) {
-  color: #fff;
-  background: blue;
+.c-loop-slider__wrapper {
+  display: flex;
+  width: max-content; // スライダー全体の横幅を内容に合わせて拡張
 }
 
-.swiper-slide:nth-child(3) {
-  color: #fff;
-  background: green;
+.c-loop-slider__items {
+  display: flex;
+  animation: infinity-scroll 30s linear infinite both;
+}
+
+.c-loop-slider__items img {
+  width: auto;
+  height: 240px;
+  margin-right: 20px; // 複製の間に余白をつける
+
+  // 画面幅によって高さ調整
+  @media screen and (min-width: 900px) {
+    height: min(340 / 900 * 100vw, 340px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: max(340 / 1200 * 100vw, 340px);
+  }
 }
