@@ -2,7 +2,8 @@
 <main>
   <div class="top_mv">
     <div class="container">
-      <h2>YU YOGA <span>on-line.</span></h2>
+      <!-- <h2>YU YOGA <span>on-line.</span></h2> -->
+      <h2><img src="<?php echo get_template_directory_uri(); ?>/img/top/mv_txt.svg" alt="YU YOGA on-line." width="1382" height="215" /></h2>
       <div class="top_mv--slider">
         <div class="top_mv--slider_inner">
           <div class="top_mv--slider_item">
@@ -49,7 +50,7 @@
   </section>
 
   <section class="top_about">
-    <div class="container -md">
+    <div class="container">
       <div class="top_about--lead">
         <h2>
           Gentle yoga for daily life.<br>
@@ -77,7 +78,6 @@
   <section class="top_enjoy">
     <div class="container">
       <div class="top_enjoy--inner">
-
         <div class="accordion--wrap">
           <h2>オンラインで、気軽にヨガを楽しみましょう。</h2>
           <div class="accordion js_accordion">
