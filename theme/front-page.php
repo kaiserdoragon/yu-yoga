@@ -76,9 +76,10 @@
 
   <section class="top_enjoy">
     <div class="container">
-      <h2>オンラインで、気軽にヨガを楽しみましょう。</h2>
       <div class="top_enjoy--inner">
+
         <div class="accordion--wrap">
+          <h2>オンラインで、気軽にヨガを楽しみましょう。</h2>
           <div class="accordion js_accordion">
             <div class="accordion--inner js_accordion_list">
               <p class="accordion--title">日常に寄り添うやさしいヨガ</p>
