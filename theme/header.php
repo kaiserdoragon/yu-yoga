@@ -49,11 +49,22 @@
 		<header class="header">
 			<div class="container">
 				<div class="header--inner">
-					<h1 class="header--logo">
-						<a href="<?php echo esc_url(home_url('/')); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/common/logo.svg" alt="YU YOGA" width="231" height="65" />
-						</a>
-					</h1>
+					<?php if (is_front_page()) : ?>
+						<h1 class="header--logo">
+							<a href="<?php echo esc_url(home_url('/')); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/common/logo.svg" alt="YU YOGA" width="231" height="65" />
+							</a>
+						</h1>
+					<?php else : ?>
+						<!-- それ以外のページで出したいコード -->
+						<p class="header--logo">
+							<a href="<?php echo esc_url(home_url('/')); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/common/logo.svg" alt="YU YOGA" width="231" height="65" />
+							</a>
+						</p>
+					<?php endif; ?>
+
+
 					<button id="js-gnav_btn" class="gnav_btn">
 						<span></span>
 						<span></span>
