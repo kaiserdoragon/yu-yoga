@@ -385,6 +385,12 @@
     font-size: var(--fz40);
   }
 
+  .container {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 0 min(4vw, 25px);
+    margin: auto;
+  }
 
 
   //.top_mv--slider
@@ -432,6 +438,10 @@
     span {
       display: block;
       margin-left: 0;
+    }
+
+    .container {
+      width: 100%;
     }
   }
 }
