@@ -329,3 +329,89 @@ main {
     }
   }
 }
+
+
+// ---------------------------------------------
+//  投稿関連 news
+// ---------------------------------------------
+
+.news_page_archive {
+  padding-bottom: 40px;
+  color: #fff;
+  background: $color-green;
+
+  time {
+    font-size: var(--fz12);
+  }
+
+  .container {
+    width: min(1050px, 100%);
+
+    >div {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+}
+
+.news_page_single {
+  color: #fff;
+  background: $color-green;
+
+  h2 {
+    width: fit-content;
+    padding: 0 30px 5px 0;
+    margin-bottom: 30px;
+    font-size: var(--fz25);
+    font-weight: 500;
+    border-bottom: 3px solid #fff;
+  }
+
+  time {
+    font-size: var(--fz12);
+  }
+
+  .container {
+    padding: 60px min(4vw, 25px);
+  }
+
+  .post_single {
+    margin-bottom: 40px;
+  }
+}
+
+.paging {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+// ページネーション／ページャ
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  & > span,
+  a {
+    display: inline-block !important;
+    width: 2em;
+    padding: 6px 0;
+    line-height: 1;
+    text-align: center;
+
+    &.current {
+      font-weight: bold;
+    }
+  }
+
+  &:empty {
+    display: none;
+  }
+}

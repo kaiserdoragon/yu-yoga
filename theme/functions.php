@@ -232,7 +232,7 @@ function wp_pagination()
 {
   global $wp_query;
   $big = 999999999;
-  echo paginate_links(array('base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))), 'format' => '?paged=%#%', 'current' => max(1, get_query_var('paged')), 'prev_text' => '<span>≪</span>', 'next_text' => '<span>≫</span>', 'total' => $wp_query->max_num_pages));
+  echo paginate_links(array('base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))), 'format' => '?paged=%#%', 'current' => max(1, get_query_var('paged')), 'prev_text' => '<span><</span>', 'next_text' => '<span>></span>', 'total' => $wp_query->max_num_pages));
 }
 
 add_action('init', 'wp_pagination');

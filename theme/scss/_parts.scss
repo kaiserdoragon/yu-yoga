@@ -113,7 +113,7 @@ table {
 }
 
 .eyecatch {
-  background-image: linear-gradient(to bottom, #9ba386 0%, #9ba386 50%, #ffe9ec 50%, #ffe9ec 52%, #9ba386 52%, #9ba386 100%);
+  background-image: linear-gradient(to bottom, $color-green 0%, $color-green 50%, #ffe9ec 50%, #ffe9ec 52%, $color-green 52%, $color-green 100%);
 
   &.-other {
     background: $color-green;
@@ -147,35 +147,5 @@ table {
     &:first-child::before {
       content: normal;
     }
-  }
-}
-
-// ページネーション／ページャ
-.pagination {
-  display: flex;
-  justify-content: center;
-
-  & > span,
-  a {
-    display: inline-block !important;
-    width: 2em;
-    padding: 6px 0;
-    line-height: 1;
-    text-align: center;
-
-    &.current {
-      font-weight: bold;
-    }
-  }
-
-  &:empty {
-    display: none;
-  }
-}
-
-// 404ページ
-.notfound_page {
-  .container {
-    padding: 80px min(4vw, 25px);
   }
 }

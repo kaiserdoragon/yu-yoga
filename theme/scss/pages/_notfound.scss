@@ -5,7 +5,13 @@
 //  404ページ専用
 // ---------------------------------------------
 .notfound_page {
+  color: #fff;
   text-align: center;
+  background: $color-green;
+
+  .container {
+    padding: 80px min(4vw, 25px);
+  }
 
   // notfound_page--ttl
   &--ttl {
