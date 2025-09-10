@@ -189,11 +189,11 @@
 
   @include max-mq {
     h2 {
-      font-size: var(--fz40);
+      font-size: var(--fz30);
     }
 
     .container {
-      gap: 80px;
+      gap: 60px;
     }
   }
 }
