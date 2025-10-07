@@ -19,7 +19,7 @@
     </ul>
     <div class="footer--link">
       <a href="https://mosh.jp/yoga_kirei/home">ご予約</a>
-      <a href="https://www.instagram.com/p/DMxXop3Ttz3/"><img src="<?php echo get_template_directory_uri(); ?>/img/common/instagram.svg" alt="" width="55" height="55" /></a>
+      <a href="https://www.instagram.com/yuu_yuruyoga/"><img src="<?php echo get_template_directory_uri(); ?>/img/common/instagram.svg" alt="" width="55" height="55" /></a>
     </div>
     <p class="footer--copy">
       <small>© 2025 YUヨガ教室 All Rights Reserved.</small>

@@ -276,7 +276,7 @@
           <script async src="//www.instagram.com/embed.js"></script>
         </li>
       </ul>
-      <a href="https://www.instagram.com/p/DMxXop3Ttz3/" class="top_instagram--link">INSTAGRAM</a>
+      <a href="https://www.instagram.com/yuu_yuruyoga/" class="top_instagram--link">INSTAGRAM</a>
     </div>
   </section>
 
