@@ -235,6 +235,31 @@
       border: 1px solid transparent;
     }
   }
+
+  // .top_instagram--link
+  &--list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    iframe {
+      width: 330px !important;
+      min-width: auto !important;
+      max-width: 100% !important;
+    }
+
+    @include max-mq {
+      li {
+        width: 100%;
+      }
+
+      iframe {
+        width: 100% !important;
+      }
+    }
+  }
 }
 
 .top_enjoy {
