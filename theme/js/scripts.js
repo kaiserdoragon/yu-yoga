@@ -1,16 +1,1 @@
-
-// グローバルナビゲーション //////////////////////////////////////////////////////
-const Gnav_btn = document.getElementById("js-gnav_btn");
-const Gnav = document.getElementById("js-gnav");
-if (Gnav_btn) {
-  Gnav_btn.addEventListener("click", (e) => {
-    e.currentTarget.classList.toggle("is-open");
-    Gnav.classList.toggle("is-open");
-  });
-
-  // メニューのどこかが押されたら閉じる
-  Gnav.addEventListener("click", (e) => {
-    Gnav_btn.classList.remove("is-open");
-    Gnav.classList.remove("is-open");
-  });
-}
+let Gnav_btn=document.getElementById("js-gnav_btn"),Gnav=document.getElementById("js-gnav");Gnav_btn&&(Gnav_btn.addEventListener("click",n=>{n.currentTarget.classList.toggle("is-open"),Gnav.classList.toggle("is-open")}),Gnav.addEventListener("click",n=>{Gnav_btn.classList.remove("is-open"),Gnav.classList.remove("is-open")}));
