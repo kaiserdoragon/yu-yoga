@@ -108,11 +108,11 @@
             </div>
           </div>
         </div>
+        <div class="top_enjoy--img">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/top/enjoy.png" alt="" width="879" height="360" />
+        </div>
       </div>
       <a href="<?php echo esc_url(home_url('service')); ?>">サービス</a>
-    </div>
-    <div class="top_enjoy--img">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/top/enjoy.png" alt="" width="879" height="360" />
     </div>
   </section>
 
