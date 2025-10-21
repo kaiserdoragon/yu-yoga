@@ -95,7 +95,7 @@
               <span class="accordion--icon"></span>
             </div>
             <div class="accordion--content">
-              <p>忙しい毎日の中で無理なく続けられる、やさしいヨガです。呼吸を整え、心と体の緊張をほどいていくことで、自然と穏やかな自分に戻ることができます。</p>
+              <p>深い息とゆるやかな連動で、からだの巡りを静かに起こします。蓄えたこわばりがほどけ、内側に温度が灯る感覚へ。終わる頃には重さが抜け、視界が澄み、意欲が息を吹き返します。</p>
             </div>
           </div>
           <div class="accordion js_accordion">
@@ -104,16 +104,15 @@
               <span class="accordion--icon"></span>
             </div>
             <div class="accordion--content">
-              <p>忙しい毎日の中で無理なく続けられる、やさしいヨガです。呼吸を整え、心と体の緊張をほどいていくことで、自然と穏やかな自分に戻ることができます。</p>
+              <p>一人ひとりに合う歩幅で、姿勢とバランスを丁寧に整えていきます。呼吸のリズムに合わせて小さなステップを積み重ね、身のこなしをしなやかに。習慣が育つほど心持ちが軽くなり、日々の選択も明確に見えてきます。</p>
             </div>
           </div>
         </div>
-        <div class="top_enjoy--img">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/top/enjoy.png" alt="" width="879" height="360" />
-        </div>
       </div>
-
       <a href="<?php echo esc_url(home_url('service')); ?>">サービス</a>
+    </div>
+    <div class="top_enjoy--img">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/top/enjoy.png" alt="" width="879" height="360" />
     </div>
   </section>
 
