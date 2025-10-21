@@ -89,9 +89,12 @@
         width: 100%;
       }
     }
+
+    span {
+      font-size: 13vw;
+    }
   }
 }
-
 
 .service_conversion {
   padding: 90px 0;
@@ -108,5 +111,15 @@
     padding: 15px 65px;
     background: #aab198;
     border: 1px solid #fff;
+  }
+}
+
+.service_catch {
+  img {
+    @include max-mq {
+      width: 100%;
+      height: 25vw;
+      object-fit: cover;
+    }
   }
 }

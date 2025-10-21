@@ -1,0 +1,1 @@
+let Gnav_btn=document.getElementById("js-gnav_btn"),Gnav=document.getElementById("js-gnav");Gnav_btn&&(Gnav_btn.addEventListener("click",n=>{n.currentTarget.classList.toggle("is-open"),Gnav.classList.toggle("is-open")}),Gnav.addEventListener("click",n=>{Gnav_btn.classList.remove("is-open"),Gnav.classList.remove("is-open")}));
